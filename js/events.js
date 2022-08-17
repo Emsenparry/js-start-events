@@ -8,63 +8,86 @@ const validatePig = document.getElementById('evaluatePig');
 const validateAll = document.getElementById('evaluateForm');
 
 // Event listeners
-cowInput.addEventListener("keyup", evaluateCow); 
-validatePig.addEventListener("click", evaluatePig); 
-validateAll.addEventListener("click", evaluateAll); 
+cowInput.addEventListener("keyup", evaluateCow);
+validatePig.addEventListener("click", evaluatePig);
+validateAll.addEventListener("click", evaluateAll);
 
 
 // Functions ------------------------------------------------------------
-function evaluateCow(){
+function evaluateCow() {
 
-if(cowInput.value == "ko"){
-console.log("Weeeee cow!");
-cowInput.style.backgroundColor = "green"
-}
-else{
-    console.log("no cow!!");
-    cowInput.style.backgroundColor = "red"
-}
-}
-
-function evaluatePig(){
-
-if(pigInput.value == "gris"){
-    console.log("Weeeee pig!");
-    pigInput.style.backgroundColor = "green"
+    if (cowInput.value == "ko") {
+        console.log("Weeeee cow!");
+        cowInput.style.backgroundColor = "green"
     }
-    else{
-        console.log("no pig!!");
-        pigInput.style.backgroundColor = "red" 
-    }
-
-}
-
-function evaluateAll(){
-
-if(cowInput.value == "ko"){
-    console.log("Weeeee cow!");
-    }
-    else{
+    else {
         console.log("no cow!!");
         cowInput.style.backgroundColor = "red"
     }
+}
 
-if(pigInput.value == "gris"){
-    console.log("Weeeee pig!");
+function evaluatePig() {
+
+    if (pigInput.value == "gris") {
+        console.log("Weeeee pig!");
+        pigInput.style.backgroundColor = "green"
     }
-    else{
+    else {
         console.log("no pig!!");
         pigInput.style.backgroundColor = "red"
     }
 
-if(mooseInput.value == "elg"){
-    console.log("Weeeee!");
-    mooseInput.style.backgroundColor = "green"
+}
+
+function evaluateAll() {
+
+    if (cowInput.value == "ko") {
+        console.log("Weeeee cow!");
     }
-    else{
+    else {
+        console.log("no cow!!");
+        cowInput.style.backgroundColor = "red"
+    }
+
+    if (pigInput.value == "gris") {
+        console.log("Weeeee pig!");
+    }
+    else {
+        console.log("no pig!!");
+        pigInput.style.backgroundColor = "red"
+    }
+
+    if (mooseInput.value == "elg") {
+        console.log("Weeeee!");
+        mooseInput.style.backgroundColor = "green"
+    }
+    else {
         console.log("error!!");
         mooseInput.style.backgroundColor = "red"
     }
-}
 
+
+// SWITCH
+    switch(animals.value){
+    case "fugl":
+        description.innerHTML = `Du har valgt: ${animals.value}` 
+    break;
+
+    case "fisk":
+        description.innerHTML = `Du har valgt: ${animals.value}` 
+    break;
+
+    case "reptil":
+        description.innerHTML = `Du har valgt: ${animals.value}` 
+    break;
+
+    case "insekt":
+        description.innerHTML = `Du har valgt: ${animals.value}` 
+    break;
+
+    case "pattedyr":
+        description.innerHTML = `Du har valgt: ${animals.value}` 
+    break;
+}
+}
 // Functions ------------------------------------------------------------

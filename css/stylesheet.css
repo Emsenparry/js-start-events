@@ -1,8 +1,13 @@
-div{
+body{
+    font-family: sans-serif;
+}
+
+.center{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    flex-direction: column;
 }
 
 form{
@@ -21,3 +26,6 @@ input[type=text]{
 #evaluateForm{
     margin-top: 1em;
 }
+
+
+
