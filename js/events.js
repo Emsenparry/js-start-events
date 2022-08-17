@@ -17,7 +17,7 @@ validateAll.addEventListener("click", evaluateAll);
 function evaluateCow(){
 
 if(cowInput.value == "ko"){
-console.log("Weeeee cow! uwu");
+console.log("Weeeee cow!");
 cowInput.style.backgroundColor = "green"
 }
 else{
@@ -29,7 +29,7 @@ else{
 function evaluatePig(){
 
 if(pigInput.value == "gris"){
-    console.log("Weeeee pig! uwu");
+    console.log("Weeeee pig!");
     pigInput.style.backgroundColor = "green"
     }
     else{
@@ -42,21 +42,23 @@ if(pigInput.value == "gris"){
 function evaluateAll(){
 
 if(cowInput.value == "ko"){
-    console.log("Weeeee cow! uwu");
+    console.log("Weeeee cow!");
     }
     else{
         console.log("no cow!!");
+        cowInput.style.backgroundColor = "red"
     }
 
 if(pigInput.value == "gris"){
-    console.log("Weeeee pig! uwu");
+    console.log("Weeeee pig!");
     }
     else{
         console.log("no pig!!");
+        pigInput.style.backgroundColor = "red"
     }
 
 if(mooseInput.value == "elg"){
-    console.log("Weeeee! uwu");
+    console.log("Weeeee!");
     mooseInput.style.backgroundColor = "green"
     }
     else{
